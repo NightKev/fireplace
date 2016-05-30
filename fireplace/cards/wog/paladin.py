@@ -31,6 +31,13 @@ class OG_310:
 ##
 # Spells
 
+class OG_198:
+	"Forbidden Healing"
+	def play(self):
+		yield Heal(TARGET, (self.controller.mana * 2))
+		yield SpendAllMana(CONTROLLER)
+
+
 class OG_223:
 	"Divine Strength"
 	play = Buff(TARGET, "OG_223e")

@@ -4,6 +4,15 @@ from ..utils import *
 ##
 # Minions
 
+class OG_051:
+	"Forbidden Ancient"
+	def play(self):
+		yield Buff(SELF, "OG_051e") * self.controller.mana
+		yield SpendAllMana(CONTROLLER)
+
+OG_051e = buff(+1, +1)
+
+
 class OG_202:
 	"Mire Keeper"
 	choose = ("OG_202a", "OG_202b")

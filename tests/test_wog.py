@@ -262,6 +262,47 @@ def test_feral_rage():
 	assert game.player1.hero.armor == 8
 
 
+def test_forbidden_cards():
+	game = prepare_empty_game()
+	forbidden_ancient = game.player1.give("OG_051")
+	forbidden_flame = game.player1.give("OG_086")
+	forbidden_healing = game.player1.give("OG_198")
+	forbidden_ritual = game.player1.give("OG_114")
+	forbidden_shaping = game.player1.give("OG_101")
+	fen_creeper = game.player1.give("CS1_069")
+	fen_creeper.play()
+	forbidden_flame.play(target=fen_creeper)
+	assert fen_creeper.health == 6 - 5
+	assert game.player1.mana == 0
+	fen_creeper.destroy()
+	game.end_turn(); game.end_turn()
+
+	game.player1.give("BRM_001").play()
+	forbidden_ritual.play()
+	assert len(game.player1.field) == 5
+	assert game.player1.mana == 0
+	game.end_turn()
+	game.player2.give("EX1_312").play()
+	game.end_turn()
+	forbidden_shaping.play()
+	assert game.player1.field[0].cost == 10
+	assert game.player1.mana == 0
+	game.player1.field[0].destroy()
+	game.end_turn(); game.end_turn()
+
+	game.player1.hero.set_current_health(10)
+	game.player1.give("BRM_001").play()
+	forbidden_healing.play(target=game.player1.hero)
+	assert game.player1.hero.health == 10 + 10
+	assert game.player1.mana == 0
+	game.end_turn(); game.end_turn()
+
+	game.player1.give("BRM_001").play()
+	forbidden_ancient.play()
+	assert forbidden_ancient.health == forbidden_ancient.atk == 5
+	assert game.player1.mana == 0
+
+
 def test_forlorn_stalker():
 	game = prepare_game()
 	leper = game.player1.give("EX1_029")

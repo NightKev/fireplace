@@ -877,6 +877,16 @@ class SpendMana(TargetedAction):
 		target.used_mana += amount
 
 
+class SpendAllMana(TargetedAction):
+	"""
+	Make player targets spend all remaining Mana.
+	"""
+	TARGET = ActionArg()
+	
+	def do(self, source, target):
+		target.used_mana = target.max_mana
+
+
 class Give(TargetedAction):
 	"""
 	Give player targets card \a id.

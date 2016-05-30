@@ -32,6 +32,13 @@ class OG_081:
 	play = Destroy(TARGET)
 
 
+class OG_086:
+	"Forbidden Flame"
+	def play(self):
+		yield Hit(TARGET, self.controller.mana)
+		yield SpendAllMana(CONTROLLER)
+
+
 class OG_090:
 	"Cabalist's Tome"
 	play = Give(CONTROLLER, RandomSpell(card_class=CardClass.MAGE)) * 3

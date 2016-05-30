@@ -34,6 +34,13 @@ class OG_241:
 ##
 # Spells
 
+class OG_114:
+	"Forbidden Ritual"
+	def play(self):
+		yield Summon(CONTROLLER, "OG_114a") * self.controller.mana
+		yield SpendAllMana(CONTROLLER)
+
+
 class OG_116:
 	"Spreading Madness"
 	play = Hit(RANDOM_CHARACTER, 1) * 9
