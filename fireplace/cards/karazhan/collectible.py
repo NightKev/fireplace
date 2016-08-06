@@ -37,6 +37,11 @@ class ONK_6:
 	events = Discard(FRIENDLY).on(Draw(CONTROLLER))
 
 
+class ONK_7:
+	"Babbling Book"
+	play = Give(CONTROLLER, RandomSpell(card_class = CardClass.MAGE))
+
+
 ##
 # Spells
 
