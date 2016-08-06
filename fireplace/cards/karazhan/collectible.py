@@ -171,6 +171,12 @@ class ONK_38:
 	play = powered_up & Summon(CONTROLLER, "ONK_38t")
 
 
+class ONK_39:
+	"Medivh's Valet"
+	powered_up = Find(FRIENDLY_SECRETS)
+	play = powered_up & Hit(TARGET, 3)
+
+
 ##
 # Spells
 
