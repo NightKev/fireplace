@@ -93,6 +93,11 @@ class ONK_20:
 	#cost_mod = -Attr(CONTROLLER, GameTag.NUM_SPELLS_PLAYED_THIS_GAME)
 
 
+class ONK_21:
+	"Arcanosmith"
+	play = Summon(CONTROLLER, "ONK_21t")
+
+
 ##
 # Spells
 
