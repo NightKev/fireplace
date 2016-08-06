@@ -18,6 +18,15 @@ class ONK_1:
 	)
 
 
+class ONK_2:
+	"Ethereal Peddler"
+	play = Buff(FRIENDLY_HAND + CLASS_CARD - FRIENDLY_CLASS, "ONK_2e")
+
+class ONK_2e:
+	events = REMOVED_IN_PLAY
+	tags = {GameTag.COST: -2}
+
+
 ##
 # Spells
 
