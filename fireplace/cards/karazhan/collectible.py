@@ -42,6 +42,12 @@ class ONK_7:
 	play = Give(CONTROLLER, RandomSpell(card_class = CardClass.MAGE))
 
 
+class ONK_8:
+	"Book Wyrm"
+	powered_up = HOLDING_DRAGON
+	play = powered_up & Destroy(TARGET)
+
+
 ##
 # Spells
 
