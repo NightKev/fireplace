@@ -182,6 +182,11 @@ class ONK_40:
 	play = Summon(CONTROLLER, Copy(TARGET))
 
 
+class ONK_41:
+	"Cloaked Huntress"
+	update = Refresh(FRIENDLY_HAND + SECRET, {GameTag.COST: SET(0)})
+
+
 ##
 # Spells
 
