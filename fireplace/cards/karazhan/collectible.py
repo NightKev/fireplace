@@ -27,6 +27,11 @@ class ONK_2e:
 	tags = {GameTag.COST: -2}
 
 
+class ONK_5:
+	"Kindly Grandmother"
+	deathrattle = Summon(CONTROLLER, "ONK_5t")
+
+
 ##
 # Spells
 
