@@ -102,6 +102,11 @@ class ONK_12:
 	)
 
 
+class ONK_18:
+	"Moonglade Portal"
+	play = Heal(TARGET, 6), Summon(CONTROLLER, RandomMinion(cost=6))
+
+
 ##
 # Weapons
 
