@@ -207,6 +207,13 @@ class ONK_36:
 	play = Silence(TARGET), Draw(CONTROLLER)
 
 
+class ONK_37:
+	"Silvermoon Portal"
+	play = Buff(TARGET, "ONK_37e"), Summon(CONTROLLER, RandomMinion(cost=2))
+
+ONK_37e = buff(+2, +2)
+
+
 ##
 # Weapons
 
