@@ -165,6 +165,12 @@ class ONK_35:
 	events = OWN_SPELL_PLAY.on(Heal(FRIENDLY_HERO, 3))
 
 
+class ONK_38:
+	"Nightbane Templar"
+	powered_up = HOLDING_DRAGON
+	play = powered_up & Summon(CONTROLLER, "ONK_38t")
+
+
 ##
 # Spells
 
