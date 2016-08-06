@@ -236,6 +236,13 @@ class ONK_37:
 ONK_37e = buff(+2, +2)
 
 
+class ONK_42:
+	"Cat Trick"
+	secret = Play(OPPONENT, SPELL).on(
+		Reveal(SELF), Summon(CONTROLLER, "ONK_42t")
+	)
+
+
 ##
 # Weapons
 
