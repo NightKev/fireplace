@@ -129,6 +129,11 @@ class ONK_25:
 ONK_25e = buff(health=1)
 
 
+class ONK_26:
+	"Pantry Spider"
+	play = Summon(CONTROLLER, "ONK_26t")
+
+
 ##
 # Spells
 
