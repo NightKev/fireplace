@@ -202,6 +202,11 @@ class ONK_29:
 	play = Hit(ENEMY_MINIONS, 1), Summon(CONTROLLER, RandomMinion(cost=1))
 
 
+class ONK_36:
+	"Purify"
+	play = Silence(TARGET), Draw(CONTROLLER)
+
+
 ##
 # Weapons
 
