@@ -122,6 +122,13 @@ class ONK_24:
 ONK_24e = buff(+1, +1, taunt=True)
 
 
+class ONK_25:
+	"Arcane Anomaly"
+	events = OWN_SPELL_PLAY.on(Buff(SELF, "ONK_25e"))
+
+ONK_25e = buff(health=1)
+
+
 ##
 # Spells
 
