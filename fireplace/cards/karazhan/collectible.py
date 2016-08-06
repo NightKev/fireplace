@@ -171,6 +171,11 @@ class ONK_28:
 	play = GainArmor(FRIENDLY_HERO, 4), Summon(CONTROLLER, RandomMinion(cost=4))
 
 
+class ONK_29:
+	"Maelstrom Portal"
+	play = Hit(ENEMY_MINIONS, 1), Summon(CONTROLLER, RandomMinion(cost=1))
+
+
 ##
 # Weapons
 
