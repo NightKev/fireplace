@@ -48,6 +48,11 @@ class ONK_8:
 	play = powered_up & Destroy(TARGET)
 
 
+class ONK_9:
+	"Moroes"
+	events = OWN_TURN_END.on(Summon(CONTROLLER, "ONK_9t"))
+
+
 ##
 # Spells
 
