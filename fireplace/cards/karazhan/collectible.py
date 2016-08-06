@@ -150,6 +150,11 @@ class ONK_32:
 	deathrattle = Give(CONTROLLER, "ONK_32w")
 
 
+class ONK_33:
+	"Swashburgler"
+	play = Give(CONTROLLER, RandomCollectible(card_class=ENEMY_CLASS))
+
+
 ##
 # Spells
 
