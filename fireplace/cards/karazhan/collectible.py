@@ -74,6 +74,12 @@ class ONK_15:
 	events = Discard(SELF).on(Summon(CONTROLLER, SELF))
 
 
+class ONK_16:
+	"Netherspite Historian"
+	powered_up = HOLDING_DRAGON
+	play = powered_up & DISCOVER(RandomDragon())
+
+
 ##
 # Spells
 
