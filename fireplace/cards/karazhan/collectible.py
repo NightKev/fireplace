@@ -66,5 +66,14 @@ class ONK_10:
 	play = Summon(CONTROLLER, "ONK_10t") * Count(ENEMY_MINIONS)
 
 
+class ONK_12:
+	"Kara Kazham!"
+	play = (
+		Summon(CONTROLLER, "ONK_12ta"),
+		Summon(CONTROLLER, "ONK_12tb"),
+		Summon(CONTROLLER, "ONK_12tc")
+	)
+
+
 ##
 # Weapons
