@@ -111,3 +111,15 @@ class ONK_14w:
 		Summon(CONTROLLER, RandomMinion(cost=Attr(Play.CARD, GameTag.COST))),
 		Hit(SELF, 1)
 	)
+
+
+class ONK_17:
+	"Fool's Bane"
+	play = Buff(CONTROLLER, "ONK_17o")
+
+class ONK_17o:
+	update = (
+		Refresh(FRIENDLY_WEAPON, {GameTag.CANT_EXHAUST: True}),
+		Refresh(FRIENDLY_WEAPON, {GameTag.CANNOT_ATTACK_HEROES: True})
+	)
+	events = Death(FRIENDLY_WEAPON).on(Destroy(SELF))
