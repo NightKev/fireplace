@@ -88,6 +88,11 @@ class ONK_19:
 	)
 
 
+class ONK_20:
+	"Arcane Giant"
+	#cost_mod = -Attr(CONTROLLER, GameTag.NUM_SPELLS_PLAYED_THIS_GAME)
+
+
 ##
 # Spells
 
