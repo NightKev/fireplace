@@ -160,6 +160,11 @@ class ONK_34:
 	play = Summon(CONTROLLER, Copy(RANDOM(FRIENDLY + KILLED + MINION)))
 
 
+class ONK_35:
+	"Priest of the Feast"
+	events = OWN_SPELL_PLAY.on(Heal(FRIENDLY_HERO, 3))
+
+
 ##
 # Spells
 
