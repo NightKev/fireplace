@@ -61,5 +61,10 @@ class ONK_4:
 	play = Hit(TARGET, 5), Summon(CONTROLLER, RandomMinion(cost=5))
 
 
+class ONK_10:
+	"Protect The King!"
+	play = Summon(CONTROLLER, "ONK_10t") * Count(ENEMY_MINIONS)
+
+
 ##
 # Weapons
