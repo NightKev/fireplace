@@ -115,6 +115,13 @@ class ONK_23:
 	deathrattle = Summon(TARGET)
 
 
+class ONK_24:
+	"Avian Watcher"
+	play = Find(FRIENDLY_SECRETS) & Buff(SELF, "ONK_24e")
+
+ONK_24e = buff(+1, +1, taunt=True)
+
+
 ##
 # Spells
 
