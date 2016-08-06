@@ -32,6 +32,11 @@ class ONK_5:
 	deathrattle = Summon(CONTROLLER, "ONK_5t")
 
 
+class ONK_6:
+	"Malchezaar's Imp"
+	events = Discard(FRIENDLY).on(Draw(CONTROLLER))
+
+
 ##
 # Spells
 
