@@ -166,6 +166,11 @@ class ONK_18:
 	play = Heal(TARGET, 6), Summon(CONTROLLER, RandomMinion(cost=6))
 
 
+class ONK_28:
+	"Ironforge Portal"
+	play = GainArmor(FRIENDLY_HERO, 4), Summon(CONTROLLER, RandomMinion(cost=4))
+
+
 ##
 # Weapons
 
