@@ -197,3 +197,8 @@ class ONK_17o:
 		Refresh(FRIENDLY_WEAPON, {GameTag.CANNOT_ATTACK_HEROES: True})
 	)
 	events = Death(FRIENDLY_WEAPON).on(Destroy(SELF))
+
+
+class ONK_30:
+	"Spirit Claws"
+	update = Find(FRIENDLY_MINIONS + SPELLPOWER) & Refresh(SELF, {GameTag.ATK: +2})
