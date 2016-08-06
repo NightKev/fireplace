@@ -80,6 +80,14 @@ class ONK_16:
 	play = powered_up & DISCOVER(RandomDragon())
 
 
+class ONK_19:
+	"Violet Illusionist"
+	events = (
+		OWN_TURN_BEGIN.on(Refresh(FRIENDLY_HERO, {GameTag.CANT_BE_DAMAGED: True})),
+		OWN_TURN_END.after(Refresh(FRIENDLY_HERO, {GameTag.CANT_BE_DAMAGED: False}))
+	)
+
+
 ##
 # Spells
 
