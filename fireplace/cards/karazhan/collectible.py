@@ -98,6 +98,17 @@ class ONK_21:
 	play = Summon(CONTROLLER, "ONK_21t")
 
 
+class ONK_22:
+	"Menagerie Magician"
+	play = (
+		Buff(RANDOM_FRIENDLY_MINION + BEAST, "ONK_22e"),
+		Buff(RANDOM_FRIENDLY_MINION + DRAGON, "ONK_22e"),
+		Buff(RANDOM_FRIENDLY_MINION + MURLOC, "ONK_22e")
+	)
+
+ONK_22e = buff(+2, +2)
+
+
 ##
 # Spells
 
