@@ -69,6 +69,11 @@ class ONK_14:
 	play = Summon(CONTROLLER, "ONK_14w")
 
 
+class ONK_15:
+	"Silverware Golem"
+	events = Discard(SELF).on(Summon(CONTROLLER, SELF))
+
+
 ##
 # Spells
 
