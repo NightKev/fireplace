@@ -145,6 +145,11 @@ class ONK_31:
 	#events = OWN_SPELL_PLAY.on(Summon(CONTROLLER, RandomEntourage("CS2_049")))
 
 
+class ONK_32:
+	"Deadly Fork"
+	deathrattle = Give(CONTROLLER, "ONK_32w")
+
+
 ##
 # Spells
 
