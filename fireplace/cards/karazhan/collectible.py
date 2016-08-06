@@ -109,6 +109,12 @@ class ONK_22:
 ONK_22e = buff(+2, +2)
 
 
+class ONK_23:
+	"Moat Lurker"
+	play = Destroy(TARGET)
+	deathrattle = Summon(TARGET)
+
+
 ##
 # Spells
 
