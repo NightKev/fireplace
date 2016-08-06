@@ -139,6 +139,12 @@ class ONK_27:
 	deathrattle = Draw(CONTROLLER)
 
 
+class ONK_31:
+	"Wicked Witchdoctor"
+	events = OWN_SPELL_PLAY.on(Summon(CONTROLLER, random.choice(["NEW1_009", "CS2_051", "CS2_052", "AT_132_SHAMANb"])))
+	#events = OWN_SPELL_PLAY.on(Summon(CONTROLLER, RandomEntourage("CS2_049")))
+
+
 ##
 # Spells
 
