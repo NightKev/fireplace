@@ -177,6 +177,11 @@ class ONK_39:
 	play = powered_up & Hit(TARGET, 3)
 
 
+class ONK_40:
+	"Menagerie Warden"
+	play = Summon(CONTROLLER, Copy(TARGET))
+
+
 ##
 # Spells
 
