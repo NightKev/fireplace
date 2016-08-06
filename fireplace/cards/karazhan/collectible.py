@@ -64,6 +64,11 @@ class ONK_13:
 ONK_13e = buff(+1, +1)
 
 
+class ONK_14:
+	"Medivh, the Guardian"
+	play = Summon(CONTROLLER, "ONK_14w")
+
+
 ##
 # Spells
 
@@ -88,3 +93,10 @@ class ONK_12:
 
 ##
 # Weapons
+
+class ONK_14w:
+	"Atiesh"
+	events = OWN_SPELL_PLAY.on(
+		Summon(CONTROLLER, RandomMinion(cost=Attr(Play.CARD, GameTag.COST))),
+		Hit(SELF, 1)
+	)
