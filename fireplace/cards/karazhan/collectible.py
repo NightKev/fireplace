@@ -155,6 +155,11 @@ class ONK_33:
 	play = Give(CONTROLLER, RandomCollectible(card_class=ENEMY_CLASS))
 
 
+class ONK_34:
+	"Onyx Bishop"
+	play = Summon(CONTROLLER, Copy(RANDOM(FRIENDLY + KILLED + MINION)))
+
+
 ##
 # Spells
 
