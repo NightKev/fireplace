@@ -53,6 +53,17 @@ class ONK_9:
 	events = OWN_TURN_END.on(Summon(CONTROLLER, "ONK_9t"))
 
 
+class ONK_13:
+	"Zoobot"
+	play = (
+		Buff(RANDOM_FRIENDLY_MINION + BEAST, "ONK_13e"),
+		Buff(RANDOM_FRIENDLY_MINION + DRAGON, "ONK_13e"),
+		Buff(RANDOM_FRIENDLY_MINION + MURLOC, "ONK_13e")
+	)
+
+ONK_13e = buff(+1, +1)
+
+
 ##
 # Spells
 
