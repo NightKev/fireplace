@@ -30,6 +30,10 @@ class ONK_2e:
 ##
 # Spells
 
+class ONK_4:
+	"Firelands Portal"
+	play = Hit(TARGET, 5), Summon(CONTROLLER, RandomMinion(cost=5))
+
 
 ##
 # Weapons
