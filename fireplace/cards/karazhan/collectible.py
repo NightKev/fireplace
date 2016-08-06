@@ -134,6 +134,11 @@ class ONK_26:
 	play = Summon(CONTROLLER, "ONK_26t")
 
 
+class ONK_27:
+	"Runic Egg"
+	deathrattle = Draw(CONTROLLER)
+
+
 ##
 # Spells
 
